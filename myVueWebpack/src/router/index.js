@@ -43,7 +43,7 @@ export default new VueRouter({
                 },
                 {
                     name:'卡片3',
-                    path:'card3',
+                    path:'card3/:id',
                     component:Card3
                 }
 
