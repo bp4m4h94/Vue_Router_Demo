@@ -85,7 +85,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HelloWorld',//decide the tag name
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
