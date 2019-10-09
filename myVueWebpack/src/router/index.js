@@ -12,6 +12,7 @@ import Card1 from '@/components/page/child1'
 import Card2 from '@/components/page/child2'
 import Card3 from '@/components/page/child3'
 
+import Menu from '@/components/page/menu'
 
 
 // 0. 如果使用模块化机制编程，导入Vue和VueRouter，要调用 Vue.use(VueRouter)
@@ -27,9 +28,12 @@ export default new VueRouter({
          component:Home
         },
         {
-            name:'分頁1',
             path:'/page1',
-            component:Page1,
+            components:
+            {
+                default: Page1,
+                menu: Menu
+            },
             children:[
                 {
                     name:'卡片1',
@@ -43,7 +47,7 @@ export default new VueRouter({
                 },
                 {
                     name:'卡片3',
-                    path:'card3/:id',
+                    path:'card3',
                     component:Card3
                 }
 

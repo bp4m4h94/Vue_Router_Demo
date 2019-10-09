@@ -7,7 +7,10 @@
       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </nav>
     <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view name="menu"></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
