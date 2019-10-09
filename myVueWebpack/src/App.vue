@@ -1,11 +1,18 @@
 <template>
   <div id="app">
-    <nav class="nav">
-      <routerLink class="nav-link " to="/index">Home</routerLink>
-      <routerLink class="nav-link" to="/page1">Page1</routerLink>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <routerLink class="nav-link " to="/index">Home</routerLink>
+      </li>
+      <li class="nav-item">
+        <routerLink class="nav-link" to="/page1">Page1</routerLink>
+      </li>
+    </ul>
+  </div>
+</nav>
     <img src="./assets/logo.png">
     <router-view name="menu"></router-view>
     <div class="container">

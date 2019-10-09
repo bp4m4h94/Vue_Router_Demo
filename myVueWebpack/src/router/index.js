@@ -21,6 +21,9 @@ Vue.use(VueRouter)
 // 3. 创建 router 实例
 export default new VueRouter({
 // 2. 定义路由
+     mode:'history',
+     base:'/ryan/',
+     linkActiveClass:'active',
      routes :[
         {
          name:'首頁',
